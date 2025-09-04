@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e9c40a4-753d-4eb1-af5b-4b10e5ce0f37" name="Changes" comment="vistas modificadas" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JCTC1999&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JCTC1999/gestmedapp.git&quot;,
+    &quot;accountId&quot;: &quot;4fd2434e-4662-4e1b-81b7-12e6ccdaa7b9&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="31pWGHqNo7DKZrSFEe0FJV0Hs63" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GestemedApplication.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jctor/OneDrive/Escritorio/Proyecto gestemed/gestemed",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jctor\OneDrive\Escritorio\Medico\gestemed V2 Con GPS\gestemed\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jctor\OneDrive\Escritorio\Medico\gestemed\gestemed\src\main\resources\templates\assets" />
+      <recent name="C:\Users\jctor\OneDrive\Escritorio\Medico\gestemed\gestemed\src\main\resources\templates\maintenance" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.calidad.gestemed" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GestemedApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.calidad.gestemed.GestemedApplication" />
+      <module name="gestemed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.calidad.gestemed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GestemedApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e9c40a4-753d-4eb1-af5b-4b10e5ce0f37" name="Changes" comment="" />
+      <created>1756221398809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756221398809</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Se modificó el diseño para agregar roles">
+      <option name="closed" value="true" />
+      <created>1756849471582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756849471582</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se modificó el diseño para agregar un nuevo activo">
+      <option name="closed" value="true" />
+      <created>1756851289755</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756851289755</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se modificó el diseño de las vistas por uno moderno">
+      <option name="closed" value="true" />
+      <created>1756852335724</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756852335724</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se modificó el diseño de la vista show">
+      <option name="closed" value="true" />
+      <created>1756853446336</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756853446336</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Se modificó el diseño de la vista detail">
+      <option name="closed" value="true" />
+      <created>1756853952796</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756853952796</updated>
+    </task>
+    <task id="LOCAL-00006" summary="se modificaron para guardar imagenes en azure">
+      <option name="closed" value="true" />
+      <created>1756874422263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756874422263</updated>
+    </task>
+    <task id="LOCAL-00007" summary="se modificaron para guardar imagenes en azure">
+      <option name="closed" value="true" />
+      <created>1756874664863</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756874664863</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Modificar seguridad para exponer h2 en azure. Es riesgo de seguridad">
+      <option name="closed" value="true" />
+      <created>1756875694963</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756875694963</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Se modifico para acceder desde la base de datos postgres de azure">
+      <option name="closed" value="true" />
+      <created>1756929723894</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756929723894</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Se mejoró la vista para mostrar las imagenes de los activos">
+      <option name="closed" value="true" />
+      <created>1756936408310</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1756936408310</updated>
+    </task>
+    <task id="LOCAL-00011" summary="modificado para guardar correctamente toLatitude y toLongitude del activo cuando se mueve">
+      <option name="closed" value="true" />
+      <created>1756939152339</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756939152339</updated>
+    </task>
+    <task id="LOCAL-00012" summary="vistas modificadas">
+      <option name="closed" value="true" />
+      <created>1756953630374</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1756953630374</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se modificó el diseño para agregar roles" />
+    <MESSAGE value="Se modificó el diseño para agregar un nuevo activo" />
+    <MESSAGE value="Se modificó el diseño de las vistas por uno moderno" />
+    <MESSAGE value="Se modificó el diseño de la vista show" />
+    <MESSAGE value="Se modificó el diseño de la vista detail" />
+    <MESSAGE value="se modificaron para guardar imagenes en azure" />
+    <MESSAGE value="Modificar seguridad para exponer h2 en azure. Es riesgo de seguridad" />
+    <MESSAGE value="Se modifico para acceder desde la base de datos postgres de azure" />
+    <MESSAGE value="Se mejoró la vista para mostrar las imagenes de los activos" />
+    <MESSAGE value="modificado para guardar correctamente toLatitude y toLongitude del activo cuando se mueve" />
+    <MESSAGE value="vistas modificadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="vistas modificadas" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
