@@ -30,6 +30,7 @@ public interface AssetMovementRepo extends JpaRepository<AssetMovement, Long> {
             @Param("pattern")  String pattern
     );
 
+    // borrra los registros de la tabla AssetMovement cuyo valor para el campo MovedAt sea anterior a la fecha cutoff
     long deleteByMovedAtBefore(LocalDateTime cutoff);
 }
 
