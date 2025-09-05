@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e9c40a4-753d-4eb1-af5b-4b10e5ce0f37" name="Changes" comment="vistas modificadas" />
+    <list default="true" id="1e9c40a4-753d-4eb1-af5b-4b10e5ce0f37" name="Changes" comment="vistas modificadas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calidad/gestemed/controller/MaintenanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calidad/gestemed/controller/MaintenanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/maintenance/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/maintenance/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/roles/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/roles/list.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

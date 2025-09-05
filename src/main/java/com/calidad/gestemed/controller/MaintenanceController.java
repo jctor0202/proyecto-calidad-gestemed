@@ -162,12 +162,14 @@ public class MaintenanceController {
     // Nota importante: aquí hay un doble '/maintenance' en la ruta porque la clase YA tiene @RequestMapping("/maintenance").
     // Con el @PostMapping("/maintenance/{id}/start") la URL final sería /maintenance/maintenance/{id}/start.
 
-    @PostMapping("{id}/start")
+    @PostMapping("/{id}/start")
     public String start(@PathVariable Long id) {
-        var o = orderRepo.findById(id).orElseThrow(); // trae la orden
-        o.setStatus(MaintStatus.EN_CURSO);            // cambia a EN_CURSO
-        orderRepo.save(o);                            // persiste el cambio
-        return "redirect:/maintenance/"+id;           // vuelve al detalle
+        var o = orderRepo.findById(id).orElseThrow();
+        if (o.getStatus() == MaintStatus.PENDIENTE) {
+            o.setStatus(MaintStatus.EN_CURSO);
+            orderRepo.save(o);
+        }
+        return "redirect:/maintenance/" + id;
     }
 
     // POST /maintenance/{id}/close -> cierra la orden: sube fotos/firma (opcional), marca estado FINALIZADO y fecha de cierre
