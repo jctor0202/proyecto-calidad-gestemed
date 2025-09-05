@@ -178,10 +178,14 @@ public class AssetController {
 
         // Cargamos el activo y buscamos sus movimientos usando un query nativo de postgres con filtros
         var asset = assetRepo.findById(id).orElseThrow();
+
+        // searchNative es una busqueda sql nativa de postgres para buscar los movimientos de un activo filtrados por fechas y ubicación
         var list  = movementRepo.searchNative(id, fromDate, toDate, pattern);
 
         // Variables para la vista (útiles para mantener los filtros elegidos por el usuario)
         model.addAttribute("asset", asset);
+
+        // este "movs" que se envia a la vista es muy importante porque es la lista de movimientos de los activos
         model.addAttribute("movs", list);
         model.addAttribute("from", from);
         model.addAttribute("to", to);
