@@ -1,4 +1,7 @@
 // domain/AssetMovement.java
+
+// Clase para modelar el movimiento de un activo médico
+
 package com.calidad.gestemed.domain;
 
 import jakarta.persistence.*;

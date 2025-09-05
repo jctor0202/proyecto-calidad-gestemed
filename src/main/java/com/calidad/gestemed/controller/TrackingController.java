@@ -15,6 +15,8 @@ import java.util.List;
 
 
 // controller/TrackingController.java
+
+// Controlador para el rastreo GPS
 @Controller
 @RequiredArgsConstructor
 public class TrackingController {
@@ -33,8 +35,9 @@ public class TrackingController {
     }
 
     // API que devuelve posiciones con filtros
-
+    // su función es servir datos en formato JSON al frontend
     //La anotación ResponseBody indica a Spring que el valor de retorno del método (List<GpsDTO>) debe ser directamente el cuerpo de la respuesta HTTP y no un nombre de vista
+    //metodo list puede recibir o no el cliente, el contrato o el status para hacer las consultas
     @GetMapping("/api/gps")
     @ResponseBody
     public List<GpsDTO> list(@RequestParam(required = false) String client,
@@ -56,6 +59,8 @@ public class TrackingController {
 
 
          */
+
+        // se tranforman los objetos a Asset a objetos GpsDTO
         return assetRepo.findForGps(clientLike, contractId, status)
                 .stream()
                 .map(a -> new GpsDTO(

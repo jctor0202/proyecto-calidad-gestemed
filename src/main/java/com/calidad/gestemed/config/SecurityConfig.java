@@ -17,6 +17,22 @@ import org.springframework.http.HttpMethod;
 
 import java.util.function.Predicate;
 
+
+//Esta clase es muy importante ya que es la clase que permite la autenticación de los usuarios
+
+/*
+    Cuando un usuario ingresa sus credenciales, por ejemplo, usuario=admin y contraseña=admin
+    lo que hace spring es buscar en UserDetails al usuario que le corresponde ese usuario y contraseña, en este caso,
+    es el usuario admin. Luego verifica que la contraseña proporcionada coincida con la guardada en password("{noop}admin")
+    Si las credenciales son correctas, Spring Security crea un objeto Authentication que contiene toda la información del usuario,
+    como su nombre de usuario, sus roles y sus credenciales (que se borran después de la autenticación para mayor seguridad).
+
+    Spring guarda ese objeto Authentication en su memoria interna algo como en un "almacen de sesiones" para que cada
+    vez que el usuario admin haga una nueva solicitud, Spring Security sabrá que ya está autenticado.
+
+
+ */
+
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
@@ -25,15 +41,13 @@ public class SecurityConfig {
     // Servicio que lee los flags de la tabla role_policies
     private final AuthzService authz;
 
+    // el método users() se ejecuta una vez al iniciar la aplicación y guarda en memoria los usuarios creados(admin, leasing, tech, wh, audit, manager).
     // Usuarios en memoria
     // Cuando el programa está corriendo la información de los usuarios y roles se guardan directamente en la memoria de la aplicación
-    // esto es un error de seguridad ya que los usuarios deberían estar en la base de datos protegidos
+    // esto es un "fallo de seguridad" ya que los usuarios deberían estar en la base de datos protegidos
     // en futuras versiones esto se corrigirá paa mejorar la calidad y seguridad del código
-
     // el {noop} significa que la contra no esta encriptada, lo que representa un error en la seguridad de la app
-
     // el admin tiene todos los roles, es decir, puede ejecutar todas las funcionalidades.
-
     //Por ejemplo, cuando en el login se pone user=admin y password=admin entonces automáticamente se cargan los roles ADMIN, LEASING, WAREHOUSE, TECH, AUDIT Y MANAGER.
     @Bean
     public InMemoryUserDetailsManager users() {

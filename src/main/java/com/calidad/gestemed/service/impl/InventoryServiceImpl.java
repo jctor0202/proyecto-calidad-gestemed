@@ -21,6 +21,7 @@ public class InventoryServiceImpl implements InventoryService {
     private final PartMovementRepo movementRepo;
     private final NotificationRepo notificationRepo;
 
+    // método para ajustar el stock de una pieza
     @Override
     public void adjustStock(Long partId, int delta, String note) {
         Part p = partRepo.findById(partId).orElseThrow();

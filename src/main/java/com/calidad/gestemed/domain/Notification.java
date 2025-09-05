@@ -1,5 +1,6 @@
 package com.calidad.gestemed.domain;
 
+// para las notificaciones en la pagina principal
 // domain/Notification.java
 
 import jakarta.persistence.*;

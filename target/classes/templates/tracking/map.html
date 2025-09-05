@@ -73,6 +73,7 @@
     }
 
     async function loadData() {
+
       const res = await fetch('/api/gps' + (qs() ? ('?' + qs()) : ''));
       const data = await res.json();
 

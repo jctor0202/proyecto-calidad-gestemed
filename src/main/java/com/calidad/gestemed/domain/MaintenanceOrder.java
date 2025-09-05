@@ -1,3 +1,5 @@
+// Clase para modelar una orden de mantenimiento
+
 package com.calidad.gestemed.domain;
 
 // domain/MaintenanceOrder.java

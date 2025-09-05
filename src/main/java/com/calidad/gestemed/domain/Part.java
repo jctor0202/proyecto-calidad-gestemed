@@ -1,5 +1,6 @@
 package com.calidad.gestemed.domain;
 
+// clase para modelar una pieza de reparación
 // domain/Part.java
 
 import jakarta.persistence.*;

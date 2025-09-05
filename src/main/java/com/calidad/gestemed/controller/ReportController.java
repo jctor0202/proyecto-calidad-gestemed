@@ -18,7 +18,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.io.ByteArrayOutputStream;
 import java.time.LocalDate;
 
-//Este es el controlador para generar los reportes en pdf y xlsx
+
+// Este controlador gestiona la generación de reportes, permitiendo descargar datos de activos
+// en formato PDF y Excel (XLSX). Prepara los datos, crea los documentos y los
+// envía al usuario con el formato y nombre de archivo correctos.
+
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/reports")

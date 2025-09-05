@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
 // controller/RolePolicyController.java
+
+// Controlador para las política de permisos asociadas a los roles
 @Controller
 @RequestMapping("/admin/roles") @RequiredArgsConstructor
 public class RolePolicyController {

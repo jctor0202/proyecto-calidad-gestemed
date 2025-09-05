@@ -1,5 +1,9 @@
-package com.calidad.gestemed.domain;
 
+// domain/Asset.java
+
+// Clase para modelar un activo médico
+
+package com.calidad.gestemed.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
@@ -7,7 +11,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-// domain/Asset.java
+
 @Entity
 @Table(name="assets", uniqueConstraints=@UniqueConstraint(columnNames={"assetId"}))
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder

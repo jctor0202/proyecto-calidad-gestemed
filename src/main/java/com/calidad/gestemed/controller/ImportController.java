@@ -18,7 +18,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-//Este es el controlador que permite importar los datos para rellenar automaticamente los activos
+// Este controlador maneja la carga de archivos CSV y XLSX para la importación de datos.
+// Incluye lógica estándar para detectar formatos, leer el contenido,
+// y mapear las filas a objetos de la base de datos, evitando duplicados.
+// Es una plantilla común para procesos de importación.
 
 @Controller @RequiredArgsConstructor
 @RequestMapping("/import")
@@ -38,7 +41,7 @@ public class ImportController {
             String name = (file.getOriginalFilename() == null ? "" : file.getOriginalFilename()).toLowerCase();
 
             if (name.endsWith(".csv")) {
-                // Leemos todo el contenido para detectar separador y quitar BOM
+                // Leemos todo el contenido para detectar separador y quitar caracteres especiales
                 String content = new String(file.getBytes(), java.nio.charset.StandardCharsets.UTF_8);
                 content = content.replace("\uFEFF", ""); // quita BOM si existe
 
@@ -76,7 +79,6 @@ public class ImportController {
                             row[i] = (row[i] == null ? "" : row[i].trim());
                         }
 
-                        // Mapear fila → Asset (ajusta el método mapRow si lo tienes en la clase)
                         com.calidad.gestemed.domain.Asset a = mapRow(
                                 row[0], row[1], row[2], row[3], row[4], row[5], row[6]
                         );
@@ -141,18 +143,12 @@ public class ImportController {
     }
 
     private char detectSeparator(String content) {
-        // Mira solo la primera línea (encabezado)
+        // Se queda solo con la primera línea (encabezado)
         String firstLine = content.lines().findFirst().orElse("");
         int commas = firstLine.length() - firstLine.replace(",", "").length();
         int semis  = firstLine.length() - firstLine.replace(";", "").length();
-        // Si hay más ';' que ',' asumimos separador ';' (Excel en ES suele usar ;)
         return (semis > commas) ? ';' : ',';
     }
-
-// IMPORTA ESTO ARRIBA:
-// import org.apache.poi.ss.usermodel.Cell;
-// import org.apache.poi.ss.usermodel.CellType;
-// import org.apache.poi.ss.usermodel.DateUtil;
 
     private String getCellString(Cell cell) {
         if (cell == null) return "";
@@ -175,7 +171,6 @@ public class ImportController {
                 s = Boolean.toString(cell.getBooleanCellValue());
                 break;
             case FORMULA:
-                // Si la celda con fórmula evalúa a numérico/fecha, puedes mejorar esto evaluando con FormulaEvaluator
                 s = cell.getCellFormula();
                 break;
             default:
@@ -192,8 +187,4 @@ public class ImportController {
         // Si Excel guardó la fecha como texto:
         return getCellString(cell);
     }
-
-
-
-
 }

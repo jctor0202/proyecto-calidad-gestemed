@@ -2,6 +2,8 @@ package com.calidad.gestemed.domain;
 
 // domain/PartConsumption.java
 
+// Clase para modelar el consumo de las piezas
+
 import jakarta.persistence.*;
 import lombok.*;
 

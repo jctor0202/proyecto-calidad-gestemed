@@ -1,5 +1,6 @@
+// Clase para modelar un contrato
+
 package com.calidad.gestemed.domain;
-// domain/Contract.java
 
 import jakarta.persistence.*;
 import lombok.*;
